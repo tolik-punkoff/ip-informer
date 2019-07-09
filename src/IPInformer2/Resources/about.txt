@@ -1,0 +1,50 @@
+addfont; Arial;9;Bold;Group;
+addfont; Microsoft Sans Serif;8;Regular;Names;
+addfont; Arial;14;Bold;Slogan;
+
+scene;20;
+addstring;IP Informer;Group;
+addstring;v 0.2.0;Group;
+addstring;Распространяется бесплатно;Names;
+addstring;                      ;Names;
+addstring;Developers;Group;
+addstring;[Wildsoft], [Chaos Software];Group;
+addstring;                      ;Names;
+addstring;Idea by;Group;
+addstring;OPPosition;Names;
+addstring;Code by;Group;
+addstring;D. Larin;Names;
+addstring;Chang Min Ho;Names;
+addstring;PunkArr[];Names;
+addstring;Leha Silent;Names;
+addstring;NKT;Names;
+addstring;Design;Group;
+addstring;D. Larin;Names;
+addstring;PunkArr[];Names;
+addstring;Chaos. Cry. Destruction.;Group;
+addstring;OPPosition;Names;
+addstring;Testing;Group;
+addstring;D. Larin;Names;
+addstring;OPPosition;Names;
+addstring;PunkArr[];Names;
+addstring;Использован компонент;Group;
+addstring;IP Address Control;Names;
+addstring;Ссылка на автора в README;Names;
+addstring;БД SxGeo;Group;
+addstring;© 2006-2018 zapimir;Names;
+addstring;© 2006-2018 BINOVATOR;Names;
+addstring;https://sypexgeo.net/;Names;
+addstring;Beer & Samogon;Group;
+addstring;OPPositinon;Names;
+addstring;Leha Silent;Names;
+
+scene;20;3000; ~сцена 2
+
+addstring;Об ошибках и предложениях;Names
+addstring;пишите на сайты:;Names
+addstring;http://lj.rossia.org/users/hex_laden;Names;87 CE EB;
+addstring;http://tolik-punkoff.com;Names;87 CE EB;
+
+scene;20;10000; ~сцена со слоганом
+
+addstring;Make code, not war C# like you.;Slogan;FF FF 00;

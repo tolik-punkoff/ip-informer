@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <appSettings>
+    <ComAlarmLevel>0</ComAlarmLevel>
+    <ComTime>0</ComTime>
+    <ComNetErr>1</ComNetErr>
+    <ComScriptChange>0</ComScriptChange>
+    <ComTimeInterval>30</ComTimeInterval>
+    <ComAlarmSound>true</ComAlarmSound>
+    <ComNewIPMessage>true</ComNewIPMessage>
+    <ComCheckExit>false</ComCheckExit>
+    <ComAlarmSoundPath />
+    <ComRunCommand />
+  </appSettings>
+  <ScriptsList>
+    <URL>https://api.myip.com/</URL>
+  </ScriptsList>
+  <ScriptsList>
+    <URL>https://2ip.ru</URL>
+  </ScriptsList>
+  <ScriptsList>
+    <URL>https://yandex.ru/internet/</URL>
+  </ScriptsList>
+  <ScriptsList>
+    <URL>https://hidemyna.me/ru/ip/</URL>
+  </ScriptsList>
+  <ScriptsList>
+    <URL>https://whatleaks.com/ru/</URL>
+  </ScriptsList>
+  <ScriptsList>
+    <URL>https://tenta.com/test/</URL>
+  </ScriptsList>
+  <ScriptsList>
+	<URL>https://ifconfig.me/all.json</URL>
+  </ScriptsList>
+  <ScriptsList>
+	<URL>http://whatismyip.host/my-ip-address-details</URL>
+  </ScriptsList>
+  <ScriptsList>
+    <URL>https://2ip.ua/ua/</URL>
+  </ScriptsList>
+</NewDataSet>

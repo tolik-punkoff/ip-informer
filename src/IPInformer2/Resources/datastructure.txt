@@ -1,0 +1,15 @@
+ip|IP-адрес
+country_iso|Код страны
+country_lat|Широта страны
+country_lon|Долгота страны
+country_name_ru|Страна
+country_name_en|Страна (ENG)
+city_lat|Широта города
+city_lon|Долгота города
+city_name_ru|Город
+city_name_en|Город (ENG)
+region_name_ru|Регион
+region_name_en|Регион (ENG)
+region_iso|Код региона
+status|Статус
+field|Источник IP

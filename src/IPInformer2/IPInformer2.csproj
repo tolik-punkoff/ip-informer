@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{711BFABA-D137-4634-A32C-9A00880F9D51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IPInformer2</RootNamespace>
+    <AssemblyName>IPInformer2</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>ip_icon_app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IPAddressControlLib, Version=1.0.3039.20052, Culture=neutral, PublicKeyToken=9695e912950a5d9b">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\IPAddressControlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutDrawer.cs" />
+    <Compile Include="appSettings.cs" />
+    <Compile Include="CommonFunctions.cs" />
+    <Compile Include="DataLoader.cs" />
+    <Compile Include="FileIcon.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWorker.cs" />
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCommonSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCommonSettings.designer.cs">
+      <DependentUpon>frmCommonSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExit.designer.cs">
+      <DependentUpon>frmExit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfo.designer.cs">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInputIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInputIP.designer.cs">
+      <DependentUpon>frmInputIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIPInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIPInfo.designer.cs">
+      <DependentUpon>frmIPInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNetworkSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNetworkSettings.Designer.cs">
+      <DependentUpon>frmNetworkSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPanic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPanic.designer.cs">
+      <DependentUpon>frmPanic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPanicNet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPanicNet.designer.cs">
+      <DependentUpon>frmPanicNet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScripts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScripts.Designer.cs">
+      <DependentUpon>frmScripts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStopList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStopList.designer.cs">
+      <DependentUpon>frmStopList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informer.cs" />
+    <Compile Include="IPConverter.cs" />
+    <Compile Include="IPData.cs" />
+    <Compile Include="IPGeoinfo.cs" />
+    <Compile Include="NetSettings.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCommonSettings.resx">
+      <DependentUpon>frmCommonSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExit.resx">
+      <DependentUpon>frmExit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfo.resx">
+      <DependentUpon>frmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInputIP.resx">
+      <DependentUpon>frmInputIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIPInfo.resx">
+      <DependentUpon>frmIPInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNetworkSettings.resx">
+      <DependentUpon>frmNetworkSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPanic.resx">
+      <DependentUpon>frmPanic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPanicNet.resx">
+      <DependentUpon>frmPanicNet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScripts.resx">
+      <DependentUpon>frmScripts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStopList.resx">
+      <DependentUpon>frmStopList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RunProcess.cs" />
+    <Compile Include="SendRequest.cs" />
+    <Compile Include="ShellLink.cs" />
+    <Compile Include="StartupProgramm.cs" />
+    <Compile Include="SxGeoDB.cs" />
+    <Compile Include="SxGeoUnpack.cs" />
+    <Compile Include="TrayIcons.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_full_left_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_full_right_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip_blue_16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip_gray_16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip_green_16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip_off_16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip_red_16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip_yellow_16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\datastructure.txt" />
+    <None Include="Resources\iso.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panicsound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ip_icon_app.ico" />
+    <None Include="Resources\main_def.xml" />
+    <None Include="Resources\minus.svg.png" />
+    <None Include="Resources\edit.svg.png" />
+    <None Include="Resources\plus.svg.png" />
+    <None Include="Resources\arrow_full_down_32.png" />
+    <None Include="Resources\arrow_full_up_32.png" />
+    <None Include="Resources\logo.jpg" />
+    <None Include="Resources\about.txt" />
+    <None Include="Resources\ip_icon_form.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
