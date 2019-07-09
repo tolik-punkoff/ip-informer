@@ -1,7 +1,7 @@
 # ip-informer
 Utility for detecting external ip address and its geo-location
 
-##Key features
+## Key features
 
 - Determination of the external IP address of the computer
 
