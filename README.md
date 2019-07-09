@@ -13,27 +13,27 @@ Utility for detecting external ip address and its geo-location
 
 - Determining whether the IP address is a "junk" country
 
-##Screenshots
+## Screenshots
 
-###Get new IP-address
+### Get new IP-address
 
 ![Get new IP-address](/help-src/IMAGES/09.png)
 
-###"Junk" countries list
+### "Junk" countries list
 
 !["Junk" countries list](/help-src/IMAGES/12.png)
 
-###"Junk" country IP detected
+### "Junk" country IP detected
 
 !["Junk" country IP detected](/help-src/IMAGES/13.png)
 
 !["Junk" country IP detected](/help-src/IMAGES/14.png)
 
-###You IP information
+### You IP information
 
 ![You IP information](/help-src/IMAGES/15.png)
 
-###Network errors
+### Network errors
 
 ![Network errors](/help-src/IMAGES/04.png)
 
