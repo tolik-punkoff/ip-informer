@@ -134,6 +134,19 @@ namespace IPInformer2
             });
         }
 
+        private bool IsFormOpen(string FormName)
+        {
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Name == FormName)
+                {
+                    f.Focus();
+                    return true;
+                }
+            }
+            return false;
+        }
+
         #region okandstate
         void WatchIP_Connecting(object sender)
         {
@@ -369,6 +382,8 @@ namespace IPInformer2
 
         private void mnuNetworkSettings_Click(object sender, EventArgs e)
         {
+            if (IsFormOpen("frmNetworkSettings")) return;
+
             frmNetworkSettings fNS = new frmNetworkSettings();
             fNS.ShowDialog();
             if (fNS.Chanded)
@@ -379,6 +394,8 @@ namespace IPInformer2
 
         private void mnuSettings_Click(object sender, EventArgs e)
         {
+            if (IsFormOpen("frmCommonSettings")) return;
+
             frmCommonSettings fCS = new frmCommonSettings();
             fCS.ShowDialog();
             if (fCS.Changed)
@@ -389,6 +406,8 @@ namespace IPInformer2
 
         private void mnuMyIP_Click(object sender, EventArgs e)
         {
+            if (IsFormOpen("frmIPInfo")) return;
+
             frmIPInfo fII = new frmIPInfo();
             Informer inf = new Informer();
             object tmpDataSource = inf.GetIPInfo();
@@ -405,6 +424,8 @@ namespace IPInformer2
 
         private void mnuOthIP_Click(object sender, EventArgs e)
         {
+            if (IsFormOpen("frmInputIP")) return;
+
             frmInputIP fInpIP = new frmInputIP();
             fInpIP.ShowDialog();
             if (fInpIP.IPAddress != "")
@@ -444,12 +465,16 @@ namespace IPInformer2
 
         private void mnuAbout_Click(object sender, EventArgs e)
         {
+            if (IsFormOpen("frmAbout")) return;
+
             frmAbout fAbout = new frmAbout();
             fAbout.Show();
         }
 
         private void mnuTechinfo_Click(object sender, EventArgs e)
         {
+            if (IsFormOpen("frmInfo")) return;
+
             frmInfo fInfo = new frmInfo();
             fInfo.DBPath = CommonFunctions.SxPath;
             fInfo.CurrentScript = settings.CurrentScriptAddr;
