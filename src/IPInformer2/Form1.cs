@@ -364,6 +364,8 @@ namespace IPInformer2
         {
             if (settings.ComCheckExit)
             {
+                if (IsFormOpen("frmExit")) return;
+
                 frmExit fExit = new frmExit();
                 DialogResult Ans = fExit.ShowDialog();
                 if (Ans == DialogResult.No) return;
